@@ -1,0 +1,172 @@
+<?php
+use ArmoredCore\WebObjects\Asset;
+use ArmoredCore\WebObjects\Layout;
+use ArmoredCore\WebObjects\URL;
+Layout::includeLayout('indexheader'); ?>
+
+    <!-- Header -->
+    <header id="head">
+        <div class="container">
+            <div class="row">
+                <h1 class="lead"><b>Fatura +</b><br><small><b>Software</b> de Faturação</small></h1>
+                <br><br><br>
+                <p><a class="btn btn-action btn-lg" role="button" href="<?= Url::toRoute('home/start')?>">Começe agora</a></p>
+                <p class="small">Desenvolvido por:<i> Pedro Rodrigues</i></p>
+            </div>
+        </div>
+    </header>
+    <!-- /Header -->
+
+    <!-- Intro -->
+    <div class="container text-center">
+        <br>
+        <h2 class="thin">Sobre nós</h2>
+        <br>
+        <p class="text-muted">
+            Somos uma plataforma de faturação, cuja denominação é Fatura+. Esta
+            possui como objetivo principal permitir a um funcionário emitir faturas de forma simples,
+            rápida e direta. Através da aplicação, cada cliente pode visualizar as suas faturas em formato
+            próprio para impressão.
+            A aplicação Fatura+ permite também a inserção e gestão dos dados necessários para emissão
+            das faturas.
+        </p>
+    </div>
+    <!-- /Intro-->
+
+    <!-- Highlights - jumbotron -->
+    <div class="jumbotron top-space">
+        <div class="container">
+            <h3 class="text-center thin">Os nossos objetivos</h3>
+            <div class="row">
+                <div class="col-md-3 col-sm-6 highlight">
+                    <div class="h-caption"><h4><i class="fa fa-cogs fa-5"></i>Direto</h4></div>
+                    <div class="h-body text-center">
+                        <p></p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 highlight">
+                    <div class="h-caption"><h4><i class="fa fa-flash fa-5"></i>Rápido</h4></div>
+                    <div class="h-body text-center">
+                        <p></p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 highlight">
+                    <div class="h-caption"><h4><i class="fa fa-heart fa-5"></i>Clientes satisfeitos</h4></div>
+                    <div class="h-body text-center">
+                        <p></p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 highlight">
+                    <div class="h-caption"><h4><i class="fa fa-smile-o fa-5"></i>Simples</h4></div>
+                    <div class="h-body text-center">
+                        <p></p>
+                    </div>
+                </div>
+            </div> <!-- /row  -->
+
+        </div>
+    </div>
+    <!-- /Highlights -->
+
+    <!-- container -->
+    <div class="container">
+
+        <h2 class="text-center top-space">As nossas funcionalidades</h2>
+        <br>
+        <div class="row">
+            <div class="col-sm-6">
+                <h3><span class="glyphicon glyphicon-ok">&nbsp;</span>Funcionalidade 1</h3>
+                <br>
+                <p>Colocar imagem ilustrativa abaixo.</p>
+                <pre><code>class HomeController extends BaseController
+    {
+    public function index(){
+        return View::make('home.index');
+    }
+}</code></pre>
+
+            </div>
+            <div class="col-sm-6">
+                <h3><span class="glyphicon glyphicon-ok">&nbsp;</span>Funcionalidade 2</h3>
+                <br>
+                <p>Colocar imagem ilustrativa abaixo.</p>
+                <pre class="highlight"><code><span class="cp">&lt;?php</span>
+
+<span class="k">use</span> <span class="nx">Vendor\Package\ClassName</span><span class="p">;</span>
+
+<span class="nv">$object</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">ClassName</span><span class="p">();</span>
+</code></pre>
+
+                <a href="http://www.php-fig.org/psr/psr-4/" class="btn btn-default btn-sm">
+                    <span class="glyphicon glyphicon-search"></span> PSR-4: Improved Autoloading
+                </a>&nbsp;<span class="label label-warning">* External Link</span>
+
+            </div>
+        </div> <!-- /row -->
+
+
+        <div class="row">
+            <div class="col-sm-6">
+                <h3><span class="glyphicon glyphicon-ok">&nbsp;</span>Funcionalidade 3</h3>
+                <p>Colocar imagem ilustrativa abaixo.</p>
+
+
+                <pre class="highlight"><code><span class="cp">&lt;?php</span>
+
+<span class="k">namespace</span> <span class="nx">Psr\Log</span><span class="p">;</span>
+
+<span class="sd">/**
+ * Describes a logger instance
+ */</span>
+<span class="k">interface</span> <span class="nx">LoggerInterface</span>
+<span class="p">{</span>
+</code></pre>
+
+
+                <a href="http://www.php-fig.org/psr/psr-3/" class="btn btn-default btn-sm">
+                    <span class="glyphicon glyphicon-cog"></span> PSR-3: Logger Interface
+                </a>&nbsp;<span class="label label-warning">* External Link</span><br><br>
+                <a href="http://www.php-fig.org/psr/psr-6/" class="btn btn-default btn-sm">
+                    <span class="glyphicon glyphicon-cog"></span> PSR-6: Caching Interface
+                </a>&nbsp;<span class="label label-warning">* External Link</span><br><br>
+                <a href="http://www.php-fig.org/psr/psr-7/" class="btn btn-default btn-sm">
+                    <span class="glyphicon glyphicon-cog"></span> PSR-7: HTTP Message Interfaces
+                </a>&nbsp;<span class="label label-warning">* External Link</span>
+
+            </div>
+            <div class="col-sm-6">
+                <h3><span class="glyphicon glyphicon-ok">&nbsp;</span>Funcionalidade 4</h3>
+                <p>Colocar imagem ilustrativa abaixo.</p>
+                <pre class="highlight"><code><span class="cp">&lt;?php</span>
+
+<span class="k">namespace</span> <span class="nx">Vendor\Package</span><span class="p">;</span>
+
+<span class="k">class</span> <span class="nc">ClassName</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">fooBarBaz</span><span class="p">(</span><span class="nv">$arg1</span><span class="p">,</span> <span class="o">&amp;</span><span class="nv">$arg2</span><span class="p">,</span> <span class="nv">$arg3</span> <span class="o">=</span> <span class="p">[])</span>
+    <span class="p">{</span>
+        <span class="c1">// method body
+</span>    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+                <a href="http://www.php-fig.org/psr/psr-1/" class="btn btn-default btn-xs">
+                    <span class="glyphicon glyphicon-asterisk"></span> PSR-1: Basic Coding Standard
+                </a>&nbsp;<span class="label label-warning">* External Link</span><br><br>
+                <a href="http://www.php-fig.org/psr/psr-2/" class="btn btn-default btn-xs">
+                    <span class="glyphicon glyphicon-asterisk"></span> PSR-2: Coding Style Guide
+                </a>&nbsp;<span class="label label-warning">* External Link</span>
+
+            </div>
+        </div> <!-- /row -->
+
+        <br><br>
+        <h3><span class="glyphicon glyphicon-flag">&nbsp;</span>Localização</h3>
+        <br>
+        <p>A nossa localização:</p>
+
+        <!-- Código do GoogleMaps -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3068.2318123388486!2d-8.823231984340163!3d39.73444340477371!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd22735a4e067afb%3A0xcfaf619f4450fa76!2sPolit%C3%A9cnico%20de%20Leiria%20%7C%20ESTG%20-%20Escola%20Superior%20de%20Tecnologia%20e%20Gest%C3%A3o_Edif%C3%ADcio%20D!5e0!3m2!1spt-PT!2spt!4v1650576672472!5m2!1spt-PT!2spt" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+</div>	<!-- /container -->
+
+<?php Layout::includeLayout('footer')?>
